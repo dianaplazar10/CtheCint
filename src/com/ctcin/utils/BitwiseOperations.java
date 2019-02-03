@@ -27,6 +27,13 @@ public class BitwiseOperations {
 		System.out.println("Binary (b<<1): "+ Integer.toBinaryString(b<<1));
 		System.out.println("Binary (b>>1): "+ Integer.toBinaryString(b>>1));
 		
+		System.out.println();
+		b=(byte) 130;// returns negative number(-126).. since range is -126 ~ 127 only..,
+		System.out.println("byte b: "+b);
+		System.out.println("Binary b: "+ Integer.toBinaryString(b));
+		System.out.println("Binary (b<<1): "+ Integer.toBinaryString(b<<1));
+		System.out.println("Binary (b>>1): "+ Integer.toBinaryString(b>>1));
+		
 //		System.out.println("Hexadecimal : "+ Integer.toHexString(a));
 //		System.out.println("Octal : "+ Integer.toOctalString(a));
 //		System.out.println("UnsignedLong : "+ Integer.toUnsignedLong(a));

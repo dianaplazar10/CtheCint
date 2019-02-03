@@ -39,7 +39,7 @@ public class RotateNbyNmatrix_1_7 {
 	private static String[][] getInverseFromTranspose(String[][] nnmatrix) {//This is also a column-wise/vertical flip of the matrix
 		 int firstIndex=0; int lastIndex=nnmatrix.length-1;
 		 while(firstIndex<lastIndex){
-			 for (int i = 0; i < nnmatrix.length; i++) {
+			 for (int i = 0; i < nnmatrix.length; i++) {// note that thsi is valid only when teh matric is nXn, is the row columns sizes are different, tehn we'll use different logic
 				String temp = nnmatrix[i][firstIndex];
 				nnmatrix[i][firstIndex] = nnmatrix[i][lastIndex];
 				nnmatrix[i][lastIndex]=temp;				
@@ -74,8 +74,7 @@ public class RotateNbyNmatrix_1_7 {
 	
 	
 
-	private static String[][] getTranspose(String[][] nnmatrix) {
-		String[][] nnmatrixTransposed=nnmatrix;
+	private static String[][] getTranspose(String[][] nnmatrixTransposed) {
 		for (int i = 0; i < nnmatrixTransposed.length; i++) {
 			for (int j = i; j < nnmatrixTransposed.length; j++) {
 				String temp = nnmatrixTransposed[i][j];
