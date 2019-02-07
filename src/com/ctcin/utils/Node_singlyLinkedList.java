@@ -11,12 +11,11 @@ public class Node_singlyLinkedList {
 		this.nodeVal=value;
 	}
 	
-	public Node_singlyLinkedList addNode(Node_singlyLinkedList head,int newNodeVal){
+	public void addNode(Node_singlyLinkedList head,int newNodeVal){
 		while(head.next!=null){
 			head = head.next;
 		}
 		head.next=new Node_singlyLinkedList(newNodeVal);
-		return head;		
 	}
 	
 	public int nodeSize(){//returns number of node that follows the current node

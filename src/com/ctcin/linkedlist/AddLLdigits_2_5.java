@@ -8,7 +8,14 @@ import com.ctcin.utils.SinglyLinkedListUtil;
  * However their sum as shows below needs to be the resulting Linked List.
  * Example:
  * Input : (7 -> 1 -> 6 ) + (5 -> 9 -> 2)
- * Output : (9 -> 1 -> 2). Which is the reverse of the sum of the above: 716 + 592 = 912 
+ * Output : (9 -> 1 -> 2). Which is the reverse of the sum of the above: 716 + 592 = 912
+ * 
+ *  To make things easier, we are here assuming that each value is single digit value, hence the LinkedList node values would only be within th erange - {0,1,2,3,4,5,6,7,8,9}
+ *  The stratergy used here is,
+ *  
+ *  Using the recursive method, we will be passing in the 2 LinkedList that needs to be added,
+ *  Along with the Carry over value of the resulting summation of the 2 nodes values form both the linked list passed. And this carry over value would either be only a '0' or a '1',
+ *  since the digits added are single digits...
  */
 
 public class AddLLdigits_2_5 {

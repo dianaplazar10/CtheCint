@@ -3,7 +3,7 @@ package com.ctcin.linkedlist;
 /*
  * This problem is to find the intersecting Node between 2 linked list.
  * 
- * Lets say that below are two intersecting LinkedLists with Intersecting Node = 5
+ * Lets say that below are two intersecting LinkedLists with Intersecting Node = 2
  * 
  * LinkedList 1 = 4- > 5 
  * 						 -> 2 -> 6 -> 3
