@@ -22,15 +22,18 @@ public class Is1EditAway_1_5 {
 				if(str1.charAt(i)!=str2.charAt(i)){
 					editIndex=i;
 					counter++;
+					if(counter>1){
+						System.out.println("More than 1 edit required to make the string equal");
+						return false;
+					} else {
+						System.out.println("character at index" + editIndex + " needs to be updated for the strings to be equal");
+						return true;
+					}
 				}
 			}
-			if(counter>1){
-				System.out.println("More than 1 edit required to make the string equal");
-				return false;
-			} else {
-				System.out.println("character at index" + editIndex + " needs to be updated for the strings to be equal");
-				return true;
-			}
+			return false;
+		} else if((Math.abs(str1.length()-str2.length())>1)){// if size between the 2 varies by more than 1, then one edit wouldn't fix the issue
+			return false;
 		} else {//if lengths aren't the same, then we could start from figuring out which string is smaller, to identify what needs to be inserted
 			String smallerStr = str1.length()<str2.length() ? str1 :str2;
 			int insertIndex=0;int editCount=0;
