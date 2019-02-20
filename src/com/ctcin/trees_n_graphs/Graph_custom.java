@@ -32,6 +32,7 @@ class GraphNode{
 	public GraphNode(int data, String name) {
 		this.graphdata=data;
 		this.name=name;
+		this.state = NODE_STATE.UNVISITED;
 	}
 	
 	public int getGraphdata() {

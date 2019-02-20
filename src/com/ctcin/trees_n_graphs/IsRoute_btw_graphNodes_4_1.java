@@ -59,9 +59,9 @@ public class IsRoute_btw_graphNodes_4_1 {
 		//Validate if the headnod eitself if the node serached?
 
 		if(headNode==searchNode) return true;
-		else if (headNode==null) return false;
+		else if (headNode==null || searchNode==null) return false;
 		
-		setStateOfAllNodesToUnvisited(graph);
+		//setStateOfAllNodesToUnvisited(graph);
 		
 		//Add head
 		LinkedList<GraphNode> nodesList= new LinkedList<GraphNode>();
