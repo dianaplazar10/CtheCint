@@ -2,12 +2,12 @@ package com.ctcin.arrays_n_strings;
 
 /*
  * Given 2 strings, returns boolean true if both are just one edit away to become equal, else return false.
- * by edit, it could be just Insert a character in one of the 2 strings, or edit a character in one of the 2 strings. Avoid removal for now.
+ * by edit, it could be just Insert a character in one of the 2 strings, or edit a character in one of the 2 strings. Avoid removal/Addition for now.
  */
-public class Is1EditAway_1_5 {
+public class Is1EditAway_1_5_ {
 
 	public static void main(String[] args) {
-		String str1 = "plee";
+		String str1 = "pole";
 		String str2 = "pale";
 		
 		boolean is1EditAway = is1EditAway(str1,str2);
@@ -34,24 +34,33 @@ public class Is1EditAway_1_5 {
 			return false;
 		} else if((Math.abs(str1.length()-str2.length())>1)){// if size between the 2 varies by more than 1, then one edit wouldn't fix the issue
 			return false;
-		} else {//if lengths aren't the same, then we could start from figuring out which string is smaller, to identify what needs to be inserted
-			String smallerStr = str1.length()<str2.length() ? str1 :str2;
-			int insertIndex=0;int editCount=0;
-			for(int i =0; i<smallerStr.length()-1;i++){
-				if(str1.charAt(i)!=str2.charAt(i)){
-					insertIndex=i;
-					editCount++;			
-				}
-			}
-			if(editCount>1){
-				System.out.println("More than 1 edit required to make the string equal");
-				return false;
-			} else{
-					System.out.println("character at index " + insertIndex + " on string \'" + smallerStr +"\' needs to be updated for the strings to be equal");
-					return true;
-			}
+		} 
+		//if lengths aren't the same, then we could start from figuring out which string is smaller, to identify what needs to be inserted
+		//NEED TO FIX THE BELOW CODE TO HANDLE, if need to add a character to make the words same
+		//----------------------------------------
+		//else {
 			
-		}
+//			String smallerStr = str1.length()<str2.length() ? str1 :str2;
+//			int insertIndex=0;int editCount=0;
+//			for(int i =0; i<smallerStr.length()-1;i++){
+//				if(str1.charAt(i)!=str2.charAt(i)){
+//					insertIndex=i;
+//					editCount++;			
+//				}
+//				if(editCount==0){
+//					insertIndex=smallerStr.length()-1;//last index
+//				}
+//			}
+//			if(editCount>1){
+//				System.out.println("More than 1 edit required to make the string equal");
+//				return false;
+//			} else{
+//					System.out.println("character at index " + insertIndex + " on string \'" + smallerStr +"\' needs to be updated for the strings to be equal");
+//					return true;
+//			}
+//			
+//		}
+		return false;
 	}
 
 }

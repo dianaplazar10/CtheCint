@@ -7,8 +7,8 @@ import java.util.stream.IntStream;
  * 
  * Steps:
  * 1) Get the array sorted
- * 2)get teh mid and make it the root,
- * 3)traverse through left and right
+ * 2) get the mid and make it the root,
+ * 3) traverse through left and right
  */
 
 public class Array2MinimalBinaryTree_4_2{

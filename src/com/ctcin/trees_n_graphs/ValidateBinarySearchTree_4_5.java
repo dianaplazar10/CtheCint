@@ -1,12 +1,13 @@
 package com.ctcin.trees_n_graphs;
 
 /*
- * BinarySearchTreaa: 
+ * BinarySearchTree: 
  * A Binary Tree is said to be a binary search tree 
  * if, 
- * 1)the root node is greater than or equal to left node, 
- * 2)and lesser than left node, and hold for all nodes in tree 
- * ie , (Left.node <= current.node < Right.node)
+ * 1)All nodes are unique
+ * 2) the root node is greater than left node, 
+ * 3)and lesser than right node, and hold for all nodes in tree 
+ * ie , (Left.node < current.node < Right.node)
  *      ----------------------------------------
  *      
  *  METHOD 1
@@ -34,7 +35,7 @@ public class ValidateBinarySearchTree_4_5 {
 		//METHOD 1
 		//--------
 		//Copy all nodes of the tree in IN-order format, ie Left..root..right
-		//and then check the condition, arr[i]>arr[i-1].. all the same as in the if condition on line 46
+		//and then parse through the array to check the condition, arr[i]>arr[i-1].. all the same as in the if condition on line 46
 		boolean isBST= checkIsBST(binaryTreeNode);
 		System.out.println("Is the tree is BST ? " + isBST);
 		
@@ -44,7 +45,7 @@ public class ValidateBinarySearchTree_4_5 {
 		//--------
 		//In thsi method, we check to see if teh given node lies between min and max,
 		// for root, min and max=null and hence, root lies within null and null
-		//while we branch out, for teh left tree, root becomes the max, and min becomes null
+		//while we branch out, for the left tree, root becomes the max, and min becomes null
 		// and similarly, while we branch out for the right tree, root becomes the min and max becomes null
 		//When we branch out left, min gets updated, and when we branch out right, max gets updated.
 		

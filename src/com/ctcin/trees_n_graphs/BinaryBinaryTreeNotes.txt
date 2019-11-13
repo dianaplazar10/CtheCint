@@ -1,0 +1,7 @@
+reference: https://www.geeksforgeeks.org/binary-tree-set-2-properties/
+
+1) Max(no: of nodes at level ‘lvl’) of a binary tree = 2^(level-1). Root is at level 1vl, hence, 2^(1-1)=0
+
+2) Max(total no: of nodes) in a binary tree of height ‘h’ is ((2^(h)) – 1).
+
+

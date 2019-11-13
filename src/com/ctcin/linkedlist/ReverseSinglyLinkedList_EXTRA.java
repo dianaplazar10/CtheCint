@@ -3,7 +3,7 @@ package com.ctcin.linkedlist;
 import com.ctcin.utils.Node_singlyLinkedList;
 import com.ctcin.utils.SinglyLinkedListUtil;
 
-public class ReverseSinglyLinkedList {
+public class ReverseSinglyLinkedList_EXTRA {
 
 	public static void main(String[] args) {
 		Node_singlyLinkedList head = SinglyLinkedListUtil.createSinglyLinkedList();

@@ -1,16 +1,16 @@
-package practice;
+package com.ctcin.trees_n_graphs;
 // A Java program to order of 
 // characters in an alien language 
 import java.util.*; 
 
 // Class to represent a graph 
-class Graph 
+class Graph2
 { 
 
 	// An array representing the graph as an adjacency list 
 	private final LinkedList<Integer>[] adjacencyList; 
 
-	Graph(int nVertices) 
+	Graph2(int nVertices) 
 	{ 
 		adjacencyList = new LinkedList[nVertices]; 
 		for (int vertexIndex = 0; vertexIndex < nVertices; vertexIndex++) 
@@ -94,7 +94,7 @@ public class OrderOfCharacters
 	private static void printOrder(String[] words, int alpha) 
 	{ 
 		// Create a graph with 'aplha' edges 
-		Graph graph = new Graph(alpha); 
+		Graph2 graph = new Graph2(alpha); 
 
 		for (int i = 0; i < words.length - 1; i++) 
 		{ 
@@ -121,8 +121,8 @@ public class OrderOfCharacters
 	// Driver program to test above functions 
 	public static void main(String[] args) 
 	{ 
-		String[] words = {"baa", "abcd", "abca", "cab", "cad"};//"caa", "aaa", "aab"}; 
-		printOrder(words, 4); 
+		String[] words = {"caa", "aaa", "aab"}; 
+		printOrder(words, 3); 
 	} 
 } 
 

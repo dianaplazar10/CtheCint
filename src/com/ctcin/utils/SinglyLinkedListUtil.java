@@ -7,15 +7,47 @@ public class SinglyLinkedListUtil {
 	 * 1 -> 11 -> 22 -> 22 -> 33
 	 */
 	public static Node_singlyLinkedList createSinglyLinkedList() {
+//		Node_singlyLinkedList head = new Node_singlyLinkedList(1);
+//		Node_singlyLinkedList cnode11 = new Node_singlyLinkedList(11);
+//		head.next=cnode11;
+//		Node_singlyLinkedList cnode22 = new Node_singlyLinkedList(22);
+//		cnode11.next = cnode22;
+//		Node_singlyLinkedList cnode22_2 = new Node_singlyLinkedList(22);
+//		cnode22.next = cnode22_2;
+//		Node_singlyLinkedList cnode33 = new Node_singlyLinkedList(33);
+//		cnode22_2.next=cnode33;
+//		Node_singlyLinkedList cnode22_3 = new Node_singlyLinkedList(22);
+//		cnode33.next = cnode22_3;
+		
+
+//[1,2,6,3,4,5,6]
+		
 		Node_singlyLinkedList head = new Node_singlyLinkedList(1);
-		Node_singlyLinkedList cnode11 = new Node_singlyLinkedList(11);
+		Node_singlyLinkedList cnode2 = new Node_singlyLinkedList(2);
+		head.next=cnode2;
+		Node_singlyLinkedList cnode6 = new Node_singlyLinkedList(6);
+		cnode2.next = cnode6;
+		Node_singlyLinkedList cnode3 = new Node_singlyLinkedList(3);
+		cnode6.next = cnode3;
+		Node_singlyLinkedList cnode4 = new Node_singlyLinkedList(4);
+		cnode3.next=cnode4;
+		Node_singlyLinkedList cnode5 = new Node_singlyLinkedList(5);
+		cnode4.next = cnode5;
+		Node_singlyLinkedList cnode6_2 = new Node_singlyLinkedList(6);
+		cnode5.next = cnode6_2;
+		return head;
+	}
+	
+	/**
+	 * Creates a Singly Linked List as below:
+	 * 1 -> 1 -> 1 ->
+	 */
+	public static Node_singlyLinkedList createSinglyLinkedList_SameElements() {
+		Node_singlyLinkedList head = new Node_singlyLinkedList(1);
+		Node_singlyLinkedList cnode11 = new Node_singlyLinkedList(1);
 		head.next=cnode11;
-		Node_singlyLinkedList cnode22 = new Node_singlyLinkedList(22);
+		Node_singlyLinkedList cnode22 = new Node_singlyLinkedList(1);
 		cnode11.next = cnode22;
-		Node_singlyLinkedList cnode22_2 = new Node_singlyLinkedList(22);
-		cnode22.next = cnode22_2;
-		Node_singlyLinkedList cnode33 = new Node_singlyLinkedList(33);
-		cnode22_2.next=cnode33;
 		return head;
 	}
 	

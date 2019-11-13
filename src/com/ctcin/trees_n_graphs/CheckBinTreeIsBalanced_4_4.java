@@ -2,8 +2,9 @@ package com.ctcin.trees_n_graphs;
 
 public class CheckBinTreeIsBalanced_4_4 {
 
-	//A binary tree is balanced if the left child has the same height as the right child
-	// or if the difference between their heights is not more than 1
+	//A binary tree is balanced if,
+	//1)the left child has the same height as the right child (OR)
+	//2)if the difference between their heights is not more than 1
 	static Array2MinimalBinaryTree_4_2 a2binTree =  new Array2MinimalBinaryTree_4_2();
 	public static void main(String[] args) {
 		//convert an int arr to a Binary Tree

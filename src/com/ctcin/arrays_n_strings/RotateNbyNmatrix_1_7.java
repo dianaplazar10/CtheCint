@@ -20,12 +20,12 @@ public class RotateNbyNmatrix_1_7 {
 		printmatrix(nnmatrix);
 		
 		System.out.println();
-		System.out.println("Inverse of the Transpose: ");
+		System.out.println("Inverse of the Transpose: column-wise/vertical flip of the transpose of given matrix ");
 		nnmatrix=getInverseFromTranspose(nnmatrix);
 		printmatrix(nnmatrix);
 		
 		System.out.println();
-		System.out.println("Inverse of the Transpose / vertical flip / column-wise flip: ");
+		System.out.println("Inverse of the Transpose / Horizon flip / row-wise flip: ");
 		nnmatrix=getInverse(nnmatrix);
 		printmatrix(nnmatrix);
 	}

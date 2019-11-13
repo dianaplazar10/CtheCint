@@ -25,7 +25,8 @@ public class IsUnique_1_1 {
 			System.out.println("---------Results without datastructure usage-------------");
 			boolean isStrUnique_noDS = isStrUnique_noDS(input);
 			printIsUnique(isStrUnique_noDS);//also print first non unique substring- with DataStructure Hashmap
-			
+		
+			System.out.println("in the format --> \"searchString : searchStrType\"");
 		}
 	}
 
